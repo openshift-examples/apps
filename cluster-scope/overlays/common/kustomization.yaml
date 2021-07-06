@@ -2,20 +2,6 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
-resources:
-# ls -1d ../../base/*/*/*
-  # Namespaces
-  - ../../base/core/namespaces/sealed-secrets
+components:
+ - ../../components/sealed-secrets-operator
 
-  # Operatorgroups
-  - ../../base/operators.coreos.com/operatorgroups/sealed-secrets
-
-  # Subscriptions
-  - ../../base/operators.coreos.com/subscriptions/sealed-secrets
-
-  # Cluster role
-  - ../../base/rbac.authorization.k8s.io/clusterroles/sealed-secrets
-  - ../../base/rbac.authorization.k8s.io/rolebinding/sealed-secrets
-  - ../../base/rbac.authorization.k8s.io/role/sealed-secrets
-  # Custom resources
-  - ../../base/bitnami.com/sealedsecretcontrollers/sealed-secrets
