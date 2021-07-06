@@ -9,6 +9,6 @@ rules:
 - apiGroups:
   - "bitnami.com"
   resources:
-  - "SealedSecretController"
+  - "sealedsecretcontrollers"
   verbs:
   - "*"
