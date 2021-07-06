@@ -15,6 +15,7 @@ resources:
 
   # Cluster role
   - ../../base/rbac.authorization.k8s.io/clusterroles/sealed-secrets
-
+  - ../../base/rbac.authorization.k8s.io/rolebinding/sealed-secrets
+  - ../../base/rbac.authorization.k8s.io/role/sealed-secrets
   # Custom resources
   - ../../base/bitnami.com/sealedsecretcontrollers/sealed-secrets
