@@ -6,3 +6,4 @@ metadata:
   annotations:
     openshift.io/display-name: "Sealed Secrets Operator"
     openshift.io/requester: admin
+    argocd.argoproj.io/sync-wave: "1"

@@ -3,6 +3,8 @@ kind: OperatorGroup
 metadata:
   name: sealed-secrets-operator-helm
   namespace: sealed-secrets
+  annotations:
+    argocd.argoproj.io/sync-wave: "2"
 spec:
   targetNamespaces:
   - sealed-secrets

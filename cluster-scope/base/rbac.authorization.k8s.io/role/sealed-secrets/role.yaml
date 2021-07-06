@@ -3,10 +3,12 @@ kind: Role
 metadata:
   name: sealed-secrets-controller
   namespace: sealed-secrets
+  annotations:
+    argocd.argoproj.io/sync-wave: "3"
 rules:
 - apiGroups:
   - "bitnami.com"
   resources:
-  - "*"
+  - "SealedSecretController"
   verbs:
   - "*"
